@@ -1,0 +1,31 @@
+#main{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 5vh 90vh 5vh;
+    grid-template-areas: 
+    "perfil header header header"
+    "div aside aside aside"
+    "footer footer footer footer"
+}
+.perfil{
+    grid-area: perfil;
+    background-color: blueviolet;
+    border: 5px solid #a5c2bf;
+}
+.header{
+    grid-area: header;
+    background-color: #006064;
+    border: 5px solid #a5c2bf;
+}
+.aside{
+    grid-area: aside;
+    border: 5px solid #a5c2bf;
+}
+.div{
+    grid-area: div;
+    border: 5px solid #a5c2bf; 
+}
+.footer{
+    grid-area: footer;
+    background-color: #009688;
+}

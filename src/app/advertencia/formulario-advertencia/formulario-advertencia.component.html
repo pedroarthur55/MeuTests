@@ -1,0 +1,37 @@
+<div class="container">        
+  <div class="row">      
+      <div class="col-md-12">
+          <form (ngSubmit)="salvarAdvertencia()" #advertenciaForm="ngForm">
+                  <p-messages [(value)]="msgs"></p-messages>
+              <div class="form-group">
+                  <h3>Motivo</h3>
+                  <span class="ui-float-label">
+                      <input id="float-input" type="text" class="form-control" 
+                      [(ngModel)]="advertencia.motivo" name="motivo" maxlength="40" size="30" pInputText>                             
+                  </span>
+              </div>
+
+              <div>
+                <h3>Descriçao</h3>
+                <span class="ui-float-label">
+                    <input id="float-input" type="text" class="form-control" 
+                    [(ngModel)]="advertencia.descricao" name="descricao" maxlength="40" size="30" pInputText>                             
+                </span>
+              </div>
+              
+              <div>
+                <h3>Anexo</h3>
+                <span class="ui-float-label">
+                    <input id="float-input" type="text" class="form-control" 
+                    [(ngModel)]="advertencia.anexo" name="anexo" maxlength="40" size="30" pInputText>                             
+                </span>
+              </div>
+
+            <div class="form-group">
+              <button type="submit" pButton label="Salvar" [disabled]="!advertenciaForm.form.valid" ></button>                    
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
